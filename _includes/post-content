@@ -1,0 +1,9 @@
+<ul class="post-meta">
+	<li class="post-date">{{ postToDisplay.date | date: "%d %b %Y %I:%M %p" }}</li>
+	<li class="post-comments"><a href='{{postToDisplay.url}}#disqus_thread'>Comments</a></li>
+</ul>
+<hr />
+<div id="post">{{ contentToDisplay }}</div>
+<hr />
+{% assign postToDisplay = nil %}
+{% assign contentToDisplay = nil %}

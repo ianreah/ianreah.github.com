@@ -1,0 +1,11 @@
+auto: true
+title: ianreah.github.com
+description: 
+paginate: 5
+navigable-pages:
+  - title: home
+    url: /index.html
+  - title: projects
+    url: /projects.html
+  - title: about
+    url: /about.html

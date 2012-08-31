@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="{{ site.title }} : {{ site.description }}" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="/stylesheets/stylesheet.css">
+
+    <title>{{ site.title }} - {{ page.title | capitalize }}</title>
+  </head>
+
+  <body>
+	{% assign navigable_pages = site.navigable-pages %}
+	{% assign current_page = page.title %}
+	{% include navigation %}
+
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">{{ content }}</section>
+    </div>
+	
+	{% assign copyright_name = site.title %}
+	{% assign now = site.time %}
+	{% include footer %}
+	
+	<script type="text/javascript">
+        (function () {
+            var s = document.createElement('script'); s.async = true;
+            s.type = 'text/javascript';
+            s.src = 'http://ianreah.disqus.com/count.js';
+            (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+        }());
+    </script>
+  </body>
+</html>
