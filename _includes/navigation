@@ -15,7 +15,7 @@
 			<li id="codeproject"><a href="http://www.codeproject.com/Members/ianreah"><span>#</span></a></li>
 			<li id="stackoverflow"><a href="http://stackoverflow.com/users/76116/ianr"><span>#</span></a></li>
 			<li id="linkedin"><a href="http://uk.linkedin.com/pub/ian-reah/3a/326/50a"><span>#</span></a></li>
-			<li id="rss"><a href="#"><span>#</span></a></li>
+			<li id="rss"><a href="/rss.xml"><span>#</span></a></li>
 		</ul>
 	</header>
 </div>
