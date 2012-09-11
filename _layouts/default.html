@@ -9,6 +9,10 @@
 	<link rel="shortcut icon" href="/images/favicon.ico" type="image/vnd.microsoft.icon">
 	<link rel="alternate" type="application/rss+xml" title="RSS feed for ianreah.com" href="/rss.xml" />
     <link rel="stylesheet" type="text/css" media="screen" href="/stylesheets/stylesheet.css">
+	
+	{% for style in page.styles %}
+		<link rel="stylesheet" type="text/css" media="screen" href="stylesheets/{{ style }}">
+	{% endfor %}
 
     <title>{{ site.title }} - {{ page.title | capitalize }}</title>
 	
@@ -28,6 +32,7 @@
   <body>
 	{% assign navigable_pages = site.navigable-pages %}
 	{% assign current_page = page.title %}
+	{% assign project_url = page.project_url %}
 	{% include navigation %}
 
     <div id="main_content_wrap" class="outer">

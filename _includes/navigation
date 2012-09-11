@@ -1,6 +1,13 @@
 <div id="header_wrap" class="outer">
 	<header class="inner">
 		<h1 id="project_title">{{ site.title }}</h1>
+		{% if project_url %}
+			<section id="downloads">
+				<a class="zip_download_link" href="{{ project_url }}/zipball/master">Download this project as a .zip file</a>
+				<a class="tar_download_link" href="{{ project_url }}/tarball/master">Download this project as a tar.gz file</a>
+				<a id="forkme_banner" href="{{ project_url }}">View on GitHub</a>
+			</section>
+		{% endif %}
 		<div id="menu_wrapper">
 			<div class="left"></div>
 			<ul id="menu">
@@ -21,3 +28,4 @@
 </div>
 {% assign navigable_pages = nil %}
 {% assign current_page = nil %}
+{% assign project_url = nil %}
