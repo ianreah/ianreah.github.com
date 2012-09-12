@@ -402,7 +402,7 @@ header {
 #forkme_banner {
   display: block;
   float: right;
-  margin: 15px 6px;
+  margin: 6px;
   z-index: 10;
   padding: 10px 50px 10px 10px;
   color: #fff;
