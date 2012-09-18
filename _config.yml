@@ -1,4 +1,5 @@
 auto: true
+pygments: true
 title: ianreah.com
 description: 
 paginate: 5
