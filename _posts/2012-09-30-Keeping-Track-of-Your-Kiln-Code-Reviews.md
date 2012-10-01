@@ -46,7 +46,7 @@ $(document).ready(function() {
     return result;
   }
   
-  function hideReviews(toHide) {
+  function hideReviewsExcept(dontHide) {
     allReviewLists = $('.reviewsList');
     reviewList = allReviewLists[allReviewLists.length - 1];
     reviews = reviewList.children;
@@ -54,7 +54,7 @@ $(document).ready(function() {
     for (i=0; i < reviews.length; i++) {
       value = reviews[i].childNodes[5].innerText.toLowerCase();
 		  
-      if (value.indexOf(toHide) == -1) 
+      if (value.indexOf(dontHide) == -1) 
       {
         reviews[i].hidden = true;
       }
@@ -63,9 +63,9 @@ $(document).ready(function() {
   
   if(querystring('showTodos') == 'true') {
     if(querystring('ixPersonReviewer').length > 0) {
-      hideReviews('undecided by you');
+      hideReviewsExcept('undecided by you');
     } else if(querystring('ixPersonAuthor').length > 0) {
-      hideReviews('rejected');
+      hideReviewsExcept('rejected');
     }
   }
 });
