@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Keeping Track of Your Kiln Code Reviews
+title: A Kiln Glaze for Keeping Track of Your Code Reviews
 date: 2012-09-30 10:57:00
 ---
 
