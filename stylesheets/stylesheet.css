@@ -154,6 +154,7 @@ footer p {
 
 header ul > li {
 	display: inline-block;
+	margin-left: 0px;
 }
 
 em {
@@ -225,12 +226,15 @@ ul, ol, dl {
 }
 
 ul li {
-  list-style: inside;
+  list-style: outside;
+  margin-left: 22px;
+  text-align: justify;
 }
 
 ol li {
-  list-style: decimal inside;
-  padding-left: 20px;
+  list-style: decimal outside;
+  margin-left: 22px;
+  text-align: justify;
 }
 
 dl dt {
@@ -368,6 +372,7 @@ img {
 	padding: 0 16px;
 	color: #909090;
 	font-size: 14px;
+	margin-left: 0px;
 }
 
 .post-comments {
