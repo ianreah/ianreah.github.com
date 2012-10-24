@@ -383,6 +383,18 @@ img {
 	background: url(../images/icon-date.png) 0 50% no-repeat;
 }
 
+.pagination {
+	margin-bottom: 20px;
+}
+
+.next {
+	float: right;
+}
+
+.previous {
+	float: left;
+}
+
 /*******************************************************************************
 Full-Width Styles
 *******************************************************************************/
