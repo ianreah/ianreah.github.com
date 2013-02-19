@@ -65,9 +65,11 @@ $(function () {
 
     // Hook up the audio routing...
     // player -> analyser -> speakers
-    var source = context.createMediaElementSource($("#player")[0]);
-    source.connect(analyser);
-    analyser.connect(context.destination);
+	setTimeout(function () {
+        var source = context.createMediaElementSource($("#player")[0]);
+        source.connect(analyser);
+        analyser.connect(context.destination);
+    }, 0);
 
     // Kick it off...
     update();
