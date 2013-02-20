@@ -47,7 +47,8 @@ $(function () {
     // Set up the visualisation elements
     var visualisation = $("#visualisation");
     for (var i = 0; i < analyser.frequencyBinCount; i++) {
-        $("<div/>").appendTo(visualisation);
+        $("<div/>").css("left", i * 15 + "px")
+			.appendTo(visualisation);
     }
     var bars = $("#visualisation > div");
 
@@ -59,7 +60,6 @@ $(function () {
 
         bars.each(function (index, bar) {
             bar.style.height = frequencyData[index] + 'px';
-            bar.style.left = index * 15 +'px';
         });
     };
 
