@@ -23,6 +23,15 @@ draft: true
     margin: 2px;
 }
 
+#example img {
+	border: none;
+	box-shadow: none;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	-o-box-shadow: none;
+	-ms-box-shadow: none;
+}
+
 #example audio {
     width: 355px;
 }
