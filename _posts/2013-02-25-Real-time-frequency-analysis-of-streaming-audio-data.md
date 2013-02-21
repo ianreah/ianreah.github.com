@@ -57,7 +57,7 @@ draft: true
 </style>
 
 <div id="example">
-	<audio id="player" class="hideIfNoApi" controls="controls" src="http://ianreah.blob.core.windows.net/sounds/Movement%20Proposition.mp3"> </audio>
+	<audio id="player" class="hideIfNoApi" controls="controls" src="http://ianreah.apphb.com/sounds/movement%20proposition.mp3"> </audio>
 	<p class="hideIfNoApi"><strong>Music: </strong><em>Movement Proposition,</em> Kevin MacLeod (<a href="http://incompetech.com/">incompetech.com</a>)</p>
 
 	<div id="visualisation" class="hideIfNoApi"> </div>
