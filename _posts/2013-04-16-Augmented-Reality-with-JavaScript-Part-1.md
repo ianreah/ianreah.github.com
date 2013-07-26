@@ -134,7 +134,7 @@ If you [can use WebGL](http://caniuse.com/#search=webgl) and [WebRTC](http://can
 
 Ok, so it is a bit rough and I've clearly still got some work to do but I still find it pretty impressive that you can even do anything like this in the browser! There is one obvious drawback with this approach though...It's all very well holding up a marker to your webcam and seeing the augmented image reflected back to you, but it's not really the same experience as looking at the scene 'through' your mobile device and seeing the augmentation appear on your 'line of sight'. Unfortunately, mobile browsers don't support the experimental features that this relies on...([yet?](http://gigaom.com/2013/05/17/webrtc-one-billion-endpoints/))
 
-As I mentioned at the start of the post, [PhoneGap](http://phonegap.com/) with the [wikitude](http://www.wikitude.com/) plug-in provides an alternative more suited to mobile devices, (but still primarily using JavaScript and HTML). I'll go through some of that next time. (I'm trying to get out of the habit of writing ridiculously long blog posts!) But, if you can't wait, the code for an Android version is [here on GitHub](https://github.com/ianreah/AR_Logo).
+As I mentioned at the start of the post, [PhoneGap](http://phonegap.com/) with the [wikitude](http://www.wikitude.com/) plug-in provides an alternative more suited to mobile devices, (but still primarily using JavaScript and HTML). I'll go through some of that next time. (I'm trying to get out of the habit of writing ridiculously long blog posts!) But, if you can't wait, the code for an Android version is [here on GitHub](https://github.com/ianreah/AR_Molecule).
 
 ---
 
