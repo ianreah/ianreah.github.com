@@ -3,6 +3,7 @@ layout: default
 title: projects
 ---
 ### Github Projects:
+* [AR_Molecule](https://github.com/ianreah/AR_Molecule) - Augmented reality with 3D molecule structures using PhoneGap and the Wikitude SDK.
 * [Molecules3D](http://molecules3d.apphb.com/) - 3D chemical structure visualisation with three.js
 * [Audio Visualizer Experiments](http://ianreah.com/audio-visualizer-experiments/) - some audio visualisations with Web Audio API
 * [jsFrames](http://ianreah.github.com/jsFrames/) - A JavaScript library for creating frame-based animations
