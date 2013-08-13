@@ -12,7 +12,7 @@ You know the sort of thing - the company hands out fliers together with a link t
 
 They can be very effective and engaging, but surely to implement something like this requires lots of platform specific SDKs and native coding, resulting in quite different codebases for the different types of devices you want to support? Well, it turns out that's not necessarily true...
 
-In this post I'll go through a first attempt at doing some augmented reality in the browser (yes - you heard right...augmented reality *in the browser*) using [three.js](http://threejs.org/) and [JSARToolkit](https://github.com/kig/JSARToolKit). Then, in the second part I'll go through an alternative using [PhoneGap](http://phonegap.com/) with the [wikitude](http://www.wikitude.com/) plug-in to produce something more suited to mobile devices, (but still primarily using JavaScript and HTML).
+In this post I'll go through a first attempt at doing some augmented reality in the browser (yes - you heard right...augmented reality *in the browser*) using [three.js](http://threejs.org/) and [JSARToolkit](https://github.com/kig/JSARToolKit). Then, in the [second part](http://ianreah.com/2013/08/11/Augmented-Reality-with-JavaScript-Part-2.html) I'll go through an alternative using [PhoneGap](http://phonegap.com/) with the [wikitude](http://www.wikitude.com/) plug-in to produce something more suited to mobile devices, (but still primarily using JavaScript and HTML).
 
 #### A first attempt with JSARToolkit and three.js
 
@@ -134,7 +134,7 @@ If you [can use WebGL](http://caniuse.com/#search=webgl) and [WebRTC](http://can
 
 Ok, so it is a bit rough and I've clearly still got some work to do but I still find it pretty impressive that you can even do anything like this in the browser! There is one obvious drawback with this approach though...It's all very well holding up a marker to your webcam and seeing the augmented image reflected back to you, but it's not really the same experience as looking at the scene 'through' your mobile device and seeing the augmentation appear on your 'line of sight'. Unfortunately, mobile browsers don't support the experimental features that this relies on...([yet?](http://gigaom.com/2013/05/17/webrtc-one-billion-endpoints/))
 
-As I mentioned at the start of the post, [PhoneGap](http://phonegap.com/) with the [wikitude](http://www.wikitude.com/) plug-in provides an alternative more suited to mobile devices, (but still primarily using JavaScript and HTML). I'll go through some of that next time. (I'm trying to get out of the habit of writing ridiculously long blog posts!) But, if you can't wait, the code for an Android version is [here on GitHub](https://github.com/ianreah/AR_Molecule).
+As I mentioned at the start of the post, [PhoneGap](http://phonegap.com/) with the [wikitude](http://www.wikitude.com/) plug-in provides an alternative more suited to mobile devices, (but still primarily using JavaScript and HTML). I'll go through some of that [next time](http://ianreah.com/2013/08/11/Augmented-Reality-with-JavaScript-Part-2.html). (I'm trying to get out of the habit of writing ridiculously long blog posts!) But, if you can't wait, the code for an Android version is [here on GitHub](https://github.com/ianreah/AR_Molecule).
 
 ---
 
