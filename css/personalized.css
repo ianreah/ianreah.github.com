@@ -1,0 +1,135 @@
+@import url(pygment_trac.css);
+
+body {
+	text-align: justify;
+}
+
+#header-background {
+	background: url(../img/header_bg.png) no-repeat, url(../img/noisy-checks.png) repeat;
+	height: 194px;
+	position: relative;
+}
+
+#page-title {
+	font-family: 'Lucida Grande', Calibri, Helvetica, Arial, sans-serif;
+	font-size: 72px;
+	font-weight: bold;
+	color: white;
+	margin: 50px 0 0 60px;
+}
+
+#page-title:hover {
+	text-shadow: #FF9000 0px 0px 10px;
+}
+
+#profile-photo {
+	position: absolute;
+	right: 20px;
+	bottom: 20px;
+}
+
+#footer {
+	height: 70px;
+	background-color: #F2F2F2;
+}
+
+.post-meta {
+	margin: 0px;
+}
+
+.post-meta > li {
+	display: inline-block;
+	padding: 0 16px;
+	color: #909090;
+	font-size: 14px;
+}
+
+.post-comments {
+	background: url(../img/icon-comments.png) 0 50% no-repeat;
+}
+
+.post-date {
+	background: url(../img/icon-date.png) 0 50% no-repeat;
+}
+
+pre, code {
+  font-size: 12px;
+}
+
+pre {
+  line-height: 18px;
+}
+
+blockquote {
+  color: #666;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) { 
+	#page-title {
+		font-size: 60px;
+	}
+
+	#header-background {
+		height: 150px;
+	}
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) { 
+	#page-title {
+		font-size: 48px;
+		margin: 35px 0 0 0;
+	}
+
+	#header-background {
+		height: 150px;
+	}
+}
+
+#social li {
+	background: url(../img/social_sprite.png) no-repeat;
+	width: 24px;
+	height: 24px;
+	opacity: 0.6;
+	margin: 20px 3px;
+}
+
+#social li:hover {
+	opacity: 1;
+}
+
+#social li a {
+	display: block;
+	height: 24px;
+}
+
+#social span {
+	display: none;
+}
+
+#social #github {
+	background-position: -0px -0px;
+}
+
+#social #twitter {
+	background-position: -0px -34px;
+}
+
+#social #codeproject {
+	background-position: -0px -136px;
+}
+
+#social #stackoverflow {
+	background-position: -0px -102px;
+}
+
+#social #linkedin {
+	background-position: -0px -170px;
+}
+
+#social #rss {
+	background-position: -0px -68px;
+}
