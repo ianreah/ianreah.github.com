@@ -79,6 +79,16 @@ blockquote p {
   margin: 20px 0 20px 20px;
 }
 
+.fake-bullet {
+  text-align: center;
+}
+
+.fake-bullet:after {
+  content: ">";
+  font-weight: bold;
+  color: #CCC;
+}
+
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) { 
 	#page-title {
