@@ -29,8 +29,14 @@ body {
 }
 
 #footer {
-	height: 70px;
-	background-color: #F2F2F2;
+	margin-top: 20px;
+	position: static;
+	height: 60px;
+	line-height: 60px;
+}
+
+#footer p {
+	margin: 0;
 }
 
 #cse-search-box {
@@ -66,6 +72,12 @@ pre, code {
 
 pre {
   line-height: 18px;
+}
+
+.highlight pre, .highlight code {
+  overflow: auto;
+  word-wrap: normal;
+  white-space: pre;
 }
 
 blockquote {
@@ -109,6 +121,11 @@ blockquote p {
 
 	#header-background {
 		height: 150px;
+	}
+
+	#footer p {
+		margin-right: 20px;
+		margin-left: 20px;
 	}
 }
 
