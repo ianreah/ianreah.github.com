@@ -4,7 +4,7 @@ title: An introduction to Jekyll
 date: 2012-12-27 23:02:00
 ---
 
-<p><a href="http://jekyllrb.com/"><img src="/images/jekyll-logo.png" alt="Jekyll - transform your text into a monster" style="float: left; margin-right: 20px;" /></a></p>
+<p><a href="http://jekyllrb.com/"><img src="/img/jekyll-logo.png" alt="Jekyll - transform your text into a monster" class="wrapped-left" /></a></p>
 
 [Jekyll](http://jekyllrb.com/) is a lightweight static site generator. It takes the raw form of your web content from simple text files and puts them through a markdown converter and template engine to produce static pages suitable for just about any web server.
 
@@ -56,7 +56,7 @@ Reah/documents/jekyll/_site</code></pre>
 
 ...you would see a new \_site folder created containing a copy of the two files. (We'll come back to that warning about no config file.)
 
-<p style="text-align: center"><img src="/images/post-2012-12-23-site-directory.png" alt="jekyll site directory" /></p>
+<p style="text-align: center"><img src="/img/post-2012-12-23-site-directory.png" alt="jekyll site directory" /></p>
 
 The idea is that the output in the \_site folder contains your entire site in a form that can be uploaded straight to your web server. To test your site locally first, just run the `jekyll` command with the `--server` option.  This will start a simple web server on port 4000.
 
@@ -78,7 +78,7 @@ Reah/documents/jekyll/_site
 
 Then you can test your site by browsing to http://localhost:4000/
 
-<p style="text-align: center"><img src="/images/post-2012-12-23-localhost-4000.png" alt="localhost:4000" /></p>
+<p style="text-align: center"><img src="/img/post-2012-12-23-localhost-4000.png" alt="localhost:4000" /></p>
 
 #### Writing your content in Markdown ####
 
@@ -104,7 +104,7 @@ For example, if you replaced the 'index.html' file from the earlier example with
 
 If you test the site with the `Jekyll --server` option you'll see the output from the processed markdown file is almost identical to our first example with the raw HTML file.
 
-<p style="text-align: center"><img src="/images/post-2012-12-23-from-markdown.png" alt="localhost:4000" /></p>
+<p style="text-align: center"><img src="/img/post-2012-12-23-from-markdown.png" alt="localhost:4000" /></p>
 
 As you've probably already worked out, the reason it doesn't look exactly like the output from the first example is that we've lost the link to the stylesheet.  In the next section, we'll look at using layouts to get that back.
 
@@ -207,7 +207,7 @@ Now, the data we added to the \_config.yml will be made available from the layou
 </html>
 {% endhighlight %}
 
-<p style="text-align: center"><img src="/images/post-2012-12-23-putting-it-together.png" alt="localhost:4000" /></p>
+<p style="text-align: center"><img src="/img/post-2012-12-23-putting-it-together.png" alt="localhost:4000" /></p>
 
 Of course, you're going to want to spend a bit more time with the styling but you get the idea!
 

@@ -34,7 +34,7 @@ Follow these steps to set up the project:
 
 Now, to make sure that's all set up correctly, try building and running the project, (ideally [on a hardware device](http://developer.android.com/tools/device.html) rather than an emulator because you're going to need to be able to do that to test the augmented reality features later). You should see the default PhoneGap start screen...
 
-<p style="text-align: center"><img src="/images/post-2013-07-31-blank-cordova.png" alt="a blank PhoneGap project" /></p>
+<p style="text-align: center"><img src="/img/post-2013-07-31-blank-cordova.png" alt="a blank PhoneGap project" /></p>
 
 #### Entering the Augmented Reality world
 
@@ -76,13 +76,13 @@ Of course, an AR world without any augmentation looks a lot like the plain old b
 
 #### Image recognition and some simple augmentation
 
-Unlike JSARToolkit, Wikitude lets you create your own marker images. This opens up a lot of possibilities. Instead of having to use those [black and white block images](/images/marker.png) you could augment your business card, company logo, magazine advert, etc. Some images work better than others though. When you create the marker, Wikitude will give it a star rating (0-3) to give some indication of how suitable the image is for tracking. They also have some hints and tips on [this page](http://www.wikitude.com/external/doc/documentation/3.0/phonegap/targetmanagement.html) on what does and doesn't make a good marker image.
+Unlike JSARToolkit, Wikitude lets you create your own marker images. This opens up a lot of possibilities. Instead of having to use those [black and white block images](/img/marker.png) you could augment your business card, company logo, magazine advert, etc. Some images work better than others though. When you create the marker, Wikitude will give it a star rating (0-3) to give some indication of how suitable the image is for tracking. They also have some hints and tips on [this page](http://www.wikitude.com/external/doc/documentation/3.0/phonegap/targetmanagement.html) on what does and doesn't make a good marker image.
 
 I tried (and failed) to be a bit creative and made this marker image...
 
 <p style="text-align: center">
   <a href="https://github.com/ianreah/AR_Molecule/blob/master/target.jpg">
-	<img src="/images/post-2013-08-02-wikitude-target.jpg" alt="The marker image" />
+	<img src="/img/post-2013-08-02-wikitude-target.jpg" alt="The marker image" />
   </a>
 </p>
 
@@ -117,7 +117,7 @@ new AR.Trackable2DObject(tracker, "target", {drawables: {cam: overlay}});
 
 ...and see what happens when you run it on your device and point it at a print out of your marker.  Hopefully, you'll see something like this...
 
-<p style="text-align: center"><img src="/images/post-2013-07-28-x-marks-the-spot.png" alt="image recognition with label overlay" /></p>
+<p style="text-align: center"><img src="/img/post-2013-07-28-x-marks-the-spot.png" alt="image recognition with label overlay" /></p>
 
 #### 3D
 
@@ -130,7 +130,7 @@ I used [Blender](http://www.blender.org/) (a free and open source 3D creation so
 It's then just a case of opening the `.fbx` or `.dae` file in the Wikitude 3D encoder and using the export button to save it to the Wikitude format (`.wt3`).
 
 <p style="text-align: center">
-  <img src="/images/post-2013-08-10-wikitude-3d-encoder.png" alt="The Wikitude 3D Encoder" />
+  <img src="/img/post-2013-08-10-wikitude-3d-encoder.png" alt="The Wikitude 3D Encoder" />
 </p>
 
 I seemed to have more success with Collada dae files. From reading the [Wikitude forums](http://developer.wikitude.com/developer-forum/-/message_boards/message/230410?_19_redirect=http%3A%2F%2Fdeveloper.wikitude.com%2Fdeveloper-forum%2F-%2Fmessage_boards%2Fsearch%3F_19_keywords%3D3D%2Blighting%26_19_searchCategoryId%3D0%26_19_breadcrumbsCategoryId%3D0%26_19_redirect%3Dhttp%253A%252F%252Fdeveloper.wikitude.com%252Fdeveloper-forum%253Fp_p_id%253D19%2526p_p_lifecycle%253D0%2526p_p_state%253Dnormal%2526p_p_mode%253Dview%2526p_p_col_id%253Dcolumn-1%2526p_p_col_count%253D1%26_19_formDate%3D1376151324197) it sounds like it could be a bug in the way Blender exports the lighting information in FBX format.

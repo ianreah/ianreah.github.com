@@ -4,13 +4,13 @@ title: A Kiln Glaze for Keeping Track of Your Code Reviews
 date: 2012-09-30 10:57:00
 ---
 
-<p><a href="https://www.fogcreek.com/kiln/"><img src="/images/kiln-logo.jpg" alt="Kiln - Mercurial Version Control and Code Review Software from Fog Creek Software" style="float: left; margin-right: 20px;" /></a></p>
+<p><a href="https://www.fogcreek.com/kiln/"><img src="/img/kiln-logo.jpg" alt="Kiln - Mercurial Version Control and Code Review Software from Fog Creek Software" style="float: left; margin-right: 20px;" /></a></p>
 
 Our team uses Fog Creek's [Kiln](https://www.fogcreek.com/kiln/) for our source control and a while ago we started making use of its [Code Review](https://www.fogcreek.com/kiln/features/code-reviews.html) features. We decided that we'd start out by reviewing everything that gets pushed to the kiln repository. We could pull back on this in the future if reviewing everything became too much and instead leave it to the developer pushing the code to decide if a review is required.
 
 I think it's working really well and I don't think we should pull back on what we're reviewing. The reviews help to spread the knowledge of the code that's being worked on and they're helping to keep our code quality high.
 
-<p><a href="https://www.fogcreek.com/kiln/features/code-reviews.html"><img src="/images/code-reviews.png" alt="Effortless Reviews, Inline Commenting" style="float: right; margin-left: 20px;"/></a></p>
+<p><a href="https://www.fogcreek.com/kiln/features/code-reviews.html"><img src="/img/code-reviews.png" alt="Effortless Reviews, Inline Commenting" style="float: right; margin-left: 20px;"/></a></p>
 
 If it really is something that doesn't need a review then it shouldn't take up a lot of time anyway. If we start choosing what to review then there's a danger we'd end up reviewing less and less of our code and eventually get out of the habit of reviewing all together.
 

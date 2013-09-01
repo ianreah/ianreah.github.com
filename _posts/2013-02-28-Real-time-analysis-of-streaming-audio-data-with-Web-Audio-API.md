@@ -8,7 +8,7 @@ date: 2013-02-28 12:47:00
 
 [Music visualisers](http://en.wikipedia.org/wiki/Music_visualization) create and render animations synchronised to changes in the music's properties (frequency, loudness, etc). Most media players (such as Windows Media Player, or iTunes) have some sort of music visualiser feature...
 
-![Music visualisers in Windows Media Player and iTunes](/images/post-2013-02-25-visualisers.jpg)
+![Music visualisers in Windows Media Player and iTunes](/img/post-2013-02-25-visualisers.jpg)
 
 Creating this type of visualisation in the browser was only really practical by [pre-processing](http://gskinner.com/blog/archives/2011/03/music-visualizer-in-html5-js-with-source-code.html) the audio up-front and storing information separately to be accessed by the visualiser during playback. But that was before the Web Audio API and its real-time analysis capabilities...
 
@@ -74,16 +74,16 @@ If you've got a [supported browser](http://caniuse.com/#feat=audio-api) you shou
 	<div id="visualisation" class="hideIfNoApi"> </div>
 
 	<p class="showIfNoApi">Unable to run this Web Audio API example. <a href="http://caniuse.com/#feat=audio-api">Check browser support</a></p>
-	<img class="showIfNoApi" src="/images/post-2013-02-19-screenshot.png" />
+	<img class="showIfNoApi" src="/img/post-2013-02-19-screenshot.png" />
 </div>
 
-The rest of this post will introduce some of the basic concepts of the Web Audio API and outline the implementation of the above animation. If you prefer, just [dive straight in to the source code here](/scripts/Real-time-frequency-analysis-of-streaming-audio-data/main.js).
+The rest of this post will introduce some of the basic concepts of the Web Audio API and outline the implementation of the above animation. If you prefer, just [dive straight in to the source code here](/js/Real-time-frequency-analysis-of-streaming-audio-data/main.js).
 
 #### Audio routing graphs
 
 The API is based around the concept of audio routing graphs. At its simplest, an audio routing graph will consist of a single sound source (such as the audio data in an MP3 file) connected directly to a sound destination (such as your computer's speakers).
 
-<p style="text-align: center"><img src="/images/post-2013-02-22-simple_routing.png" alt="Simple routing" /></p>
+<p style="text-align: center"><img src="/img/post-2013-02-22-simple_routing.png" alt="Simple routing" /></p>
 
 In general, the routing can contain any number of 'nodes' connected between one or more sound sources and ultimately connecting to the destination (what you get to hear). Audio data is passed in to each of the nodes, manipulated in some way and output to the next connection.
 
@@ -121,7 +121,7 @@ We don't have to create the destination node. The AudioContext has a `destinatio
 source.connect(context.destination);
 {% endhighlight %}
 
-<p style="text-align: center"><img src="/images/post-2013-02-22-simple_routing.png" alt="Simple routing" /></p>
+<p style="text-align: center"><img src="/img/post-2013-02-22-simple_routing.png" alt="Simple routing" /></p>
 
 #### A streaming sound source
 
@@ -152,7 +152,7 @@ audioElement.addEventListener("canplay", function() {
 
 So, now we have our streaming input coming into our routing graph and going straight to our audio hardware. But, how do we do the real-time analysis in order to make our music visualiser? Well I did say that the routing was really simple, so here it is...
 
-<p style="text-align: center"><img src="/images/post-2013-02-22-routing_with_analyser_node.png" alt="Simple routing with analyser node" /></p>
+<p style="text-align: center"><img src="/img/post-2013-02-22-routing_with_analyser_node.png" alt="Simple routing with analyser node" /></p>
 
 The API provides a node that does it all for us - the [AnalyserNode](http://www.w3.org/TR/webaudio/#AnalyserNode). All we need to do is create an AnalyserNode and stick it in the routing graph between our source and destination. When the AnalyserNode is used in a routing graph, the audio data is passed un-processed from input to output, but we can use the node object to access the frequency-domain and time-domain analysis data in real-time.
 
@@ -217,7 +217,7 @@ update();
 
 Here we're simply using the frequency data to set the heights of some coloured 'bars'. (The 'bars' are `divs` laid out horizontally with a fixed width and a dark orange `background-colour`.) Of course, just displaying the frequency data in a bar graph is the simplest (and least entertaining!) music visualisation but with a bit more imagination and creativity it should be possible to use this approach to create some much [more interesting music visualisations](https://www.google.co.uk/search?q=audio+visualisation&hl=en&tbm=isch&tbo=u&source=univ&sa=X&ei=VygnUZaFOeOV0QXW04CYDQ&sqi=2&ved=0CEEQsAQ&biw=1366&bih=667#hl=en&tbm=isch&sa=1&q=audio+visualisation&oq=audio+visualisation&gs_l=img.3..0i24l5.27133.27354.4.27678.2.2.0.0.0.0.137.242.0j2.2.0.ernk_timediscountb..0.0...1.1.4.img.zJdbaHtAsvA&bav=on.2,or.r_gc.r_pw.r_cp.r_qf.&bvm=bv.42768644,d.d2k&fp=e57d5214f3d46558&biw=1366&bih=667).
 
-Don't forget to [look through the final source code](/scripts/Real-time-frequency-analysis-of-streaming-audio-data/main.js) for our simple example.
+Don't forget to [look through the final source code](/js/Real-time-frequency-analysis-of-streaming-audio-data/main.js) for our simple example.
 
 ---
 
@@ -228,5 +228,5 @@ margin-right: 20px;"><a id="Note2" href="#refNote2">2.</a> I think the power of 
 <p style="font-size: smaller; margin-left: 20px;
 margin-right: 20px;"><a id="Note3" href="#refNote3">3.</a> There is also a <code>getByteTimeDomainData</code> function for getting the current time-domain (waveform) data but our simple animation only uses the frequency data.</p>
 
-<script type="text/javascript" src="/scripts/Real-time-frequency-analysis-of-streaming-audio-data/jquery-1.8.3.min.js"> </script>
-<script type="text/javascript" src="/scripts/Real-time-frequency-analysis-of-streaming-audio-data/main.js"> </script>
+<script type="text/javascript" src="/js/Real-time-frequency-analysis-of-streaming-audio-data/jquery-1.8.3.min.js"> </script>
+<script type="text/javascript" src="/js/Real-time-frequency-analysis-of-streaming-audio-data/main.js"> </script>

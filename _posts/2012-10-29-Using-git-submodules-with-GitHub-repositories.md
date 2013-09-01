@@ -37,7 +37,7 @@ Unpacking objects: 100% (6/6), done.
 
 If you look at the files in the superproject now you should see the subdirectory containing the submodule repository... 
 
-<p style="text-align: center"><img src="/images/post-2012-10-27-submodule-directory.png" alt="submodule directory structure"/></p>
+<p style="text-align: center"><img src="/img/post-2012-10-27-submodule-directory.png" alt="submodule directory structure"/></p>
 
 Notice also the new file `.gitmodules`. This is a configuration file that stores the mapping between the submodule's remote repository url and the local subdirectory you’ve pulled it into...
 
@@ -72,7 +72,7 @@ To https://github.com/ianreah/superproject-test.git
 
 If you look at the superproject repository in GitHub you'll see that it doesn't actually know about any of the files in the submodule.  Instead it just contains a link to a specific commit of the submodule code.
 
-![submodule link in a github repository](/images/post-2012-10-27-submodule-link.png)
+![submodule link in a github repository](/img/post-2012-10-27-submodule-link.png)
 
 #### Pulling submodule updates into the superproject
 
@@ -146,7 +146,7 @@ To https://github.com/ianreah/superproject-test.git
 
 And, once the changes have been pushed you will see that the GitHub superproject repository now links to the updated version of the submodule...
 
-![submodule updated in the github repository](/images/post-2012-10-27-submodule-updated.png)
+![submodule updated in the github repository](/img/post-2012-10-27-submodule-updated.png)
 
 #### Updating the submodule code from within the superproject
 

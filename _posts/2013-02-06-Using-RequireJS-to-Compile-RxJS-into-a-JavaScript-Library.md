@@ -4,7 +4,7 @@ title: Using RequireJS to Compile RxJS into a JavaScript Library
 date: 2013-02-06 18:32:00
 ---
 
-<p><a href="http://reactive-extensions.github.com/RxJS/"><img src="/images/rx-logo.png" alt="Reactive Extensions for JavaScript" style="float: left; margin-right: 20px;" /></a></p>
+<p><a href="http://reactive-extensions.github.com/RxJS/"><img src="/img/rx-logo.png" alt="Reactive Extensions for JavaScript" class="wrapped-left" /></a></p>
 
 I'm a big fan of the [Reactive Extensions (Rx) .NET library](http://msdn.microsoft.com/en-us/data/gg577609.aspx) so, naturally, I've been keen to try out [Reactive Extensions for JavaScript (RxJS)](http://reactive-extensions.github.com/RxJS/) in some of my JavaScript development.
 
@@ -14,7 +14,7 @@ Now, that isn't necessarily a bad thing, but if I'm writing a JavaScript library
 
 In fact, RxJS is actually a set of libraries: a [core library](https://github.com/Reactive-Extensions/RxJS/blob/master/rx.js) and a bunch of optional extras to incorporate things like [time-based event processing](https://github.com/Reactive-Extensions/RxJS/blob/master/rx.time.js), [aggregation](https://github.com/Reactive-Extensions/RxJS/blob/master/rx.aggregates.js), [etc](https://github.com/Reactive-Extensions/RxJS#readme). This has the advantage that I don't need to include the parts I don't use, but it does mean users could be required to download and include 3 or 4 (or more) files just to use my library, depending on how much of RxJS I use.
 
-<p><a href="http://requirejs.org/"><img src="/images/requirejs-logo.png" alt="RequireJS - A JavaScript Module Loader" style="float: right; margin-left: 20px;"/></a></p>
+<p><a href="http://requirejs.org/"><img src="/img/requirejs-logo.png" alt="RequireJS - A JavaScript Module Loader" class="wrapped-right" /></a></p>
 
 The good news is that [RxJS has good support for RequireJS](https://twitter.com/mattpodwysocki/status/246115294588837888).
 
@@ -153,7 +153,7 @@ require (['myLibrary.min'], function(myLibrary) {
 
 Oh, the code no longer works. When the main callback function gets called, `myLibrary` is undefined!
 
-<p style="text-align: center"><img src="/images/post-2013-02-01-uncaught-type-error.png" alt="Uncaught TypeError: Cannot call method 'onSecondsUpdate' of undefined" /></p>
+<p style="text-align: center"><img src="/img/post-2013-02-01-uncaught-type-error.png" alt="Uncaught TypeError: Cannot call method 'onSecondsUpdate' of undefined" /></p>
 
 So, what happened?
 
@@ -406,7 +406,7 @@ java -jar compiler.jar --js myLibrary.tmp --compilation_level=ADVANCED_OPTIMIZAT
 
 The `compiler.jar` for the Closure Compiler can be downloaded [here](http://closure-compiler.googlecode.com/files/compiler-latest.zip).
 
-<script src="/scripts/Using-RequireJS-to-Compile-RxJS-into-a-JavaScript-Library/rx.js"> </script>
-<script src="/scripts/Using-RequireJS-to-Compile-RxJS-into-a-JavaScript-Library/rx.time.js"> </script>
-<script src="/scripts/Using-RequireJS-to-Compile-RxJS-into-a-JavaScript-Library/myLibrary.js"> </script>
-<script src="/scripts/Using-RequireJS-to-Compile-RxJS-into-a-JavaScript-Library/main.js"> </script>
+<script src="/js/Using-RequireJS-to-Compile-RxJS-into-a-JavaScript-Library/rx.js"> </script>
+<script src="/js/Using-RequireJS-to-Compile-RxJS-into-a-JavaScript-Library/rx.time.js"> </script>
+<script src="/js/Using-RequireJS-to-Compile-RxJS-into-a-JavaScript-Library/myLibrary.js"> </script>
+<script src="/js/Using-RequireJS-to-Compile-RxJS-into-a-JavaScript-Library/main.js"> </script>

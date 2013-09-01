@@ -4,7 +4,7 @@ title: MockStock and Two Smoking Libraries...
 date: 2012-11-29 17:33:00
 ---
 
-<p><a href="http://mockstock.apphb.com/"><img src="/images/post-2012-11-16-mockstock-screenshot.png" alt="MockStock - A mock stock price subscription service using SignalR and Rx" style="float: right; margin-left: 20px;" /></a></p>
+<p><a href="http://mockstock.apphb.com/"><img src="/img/post-2012-11-16-mockstock-screenshot.png" alt="MockStock - A mock stock price subscription service using SignalR and Rx" class="wrapped-right" /></a></p>
 
 *...or, using [SignalR](http://signalr.net/) and [Rx](http://msdn.microsoft.com/en-us/data/gg577609.aspx) to simulate a real-time web application.*
 

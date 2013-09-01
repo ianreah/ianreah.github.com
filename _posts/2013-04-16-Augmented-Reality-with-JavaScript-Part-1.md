@@ -28,7 +28,7 @@ I'd already been playing around with [three.js](http://threejs.org/) and used it
 }
 </style>
 <div id="container">
-	<img class="nowebgl" src="/images/post-2013-04-17-caffeine.png" style="display:none">
+	<img class="nowebgl" src="/img/post-2013-04-17-caffeine.png" style="display:none">
 	<p class="nowebgl" style="display:none; font-size: small; text-align: center; margin-top: 0">[Try viewing the page in a browser that <a href="http://caniuse.com/#search=webgl">can use WebGL</a> to see an animated, interactive render of the molecule.]<br />[<a href="https://github.com/ianreah/Molecules3D">View on GitHub</a>]</p>
 </div>
 
@@ -38,7 +38,7 @@ I'd already been playing around with [three.js](http://threejs.org/) and used it
 
 To use it you give it a `<canvas>` element containing an image. The toolkit analyses this image for known markers. It will then provide you with information about the markers it detected, including their [transform matrices](http://en.wikipedia.org/wiki/Transformation_matrix). You can see an example below. The image used as input to the toolkit is on the left and the results of its image analysis on the right.
 
-![Example debug information from an JSARToolkit image analysis](/images/post-2013-04-17-debug.png)
+![Example debug information from an JSARToolkit image analysis](/img/post-2013-04-17-debug.png)
 
 > **TIP:** While working with the toolkit you can add a canvas to your page with `id="debugCanvas"` and define `DEBUG = true` in your JavaScript. The toolkit will then use this canvas to display debug information from its image analysis, as shown in the above right image.
 
@@ -128,7 +128,7 @@ You can see how I've put it all together in [this code here] (http://molecules3d
 
 If you [can use WebGL](http://caniuse.com/#search=webgl) and [WebRTC](http://caniuse.com/#search=getusermedia) then you can print out this marker...
 
-<p style="text-align: center"><a href="/images/marker.png"><img src="/images/marker.png" alt="The marker image" /></a></p>
+<p style="text-align: center"><a href="/img/marker.png"><img src="/img/marker.png" alt="The marker image" /></a></p>
 
 ...and [try it out](http://molecules3d.apphb.com/ar_mediastream.html).
 
@@ -141,9 +141,9 @@ As I mentioned at the start of the post, [PhoneGap](http://phonegap.com/) with t
 <p style="font-size: smaller; margin-left: 20px;
 margin-right: 20px;"><a id="Note1" href="#refNote1">1.</a> There's some good information in <a href="http://stackoverflow.com/questions/2465116/understanding-opengl-matrices/2465290#2465290">this stackoverflow answer</a>, but I think I'm going to have to read it a couple more times to get it to sink in!</p>
 
-<script src="/scripts/Augmented-Reality-with-JavaScript/jquery.min.js"> </script>
-<script src="/scripts/Augmented-Reality-with-JavaScript/three.min.js"> </script>
-<script src="/scripts/Augmented-Reality-with-JavaScript/TrackballControls.js"> </script>
-<script src="/scripts/Augmented-Reality-with-JavaScript/Detector.js"> </script>
-<script src="/scripts/Augmented-Reality-with-JavaScript/jsFrames.min.js"> </script>
-<script src="/scripts/Augmented-Reality-with-JavaScript/main.js"> </script>
+<script src="/js/Augmented-Reality-with-JavaScript/jquery.min.js"> </script>
+<script src="/js/Augmented-Reality-with-JavaScript/three.min.js"> </script>
+<script src="/js/Augmented-Reality-with-JavaScript/TrackballControls.js"> </script>
+<script src="/js/Augmented-Reality-with-JavaScript/Detector.js"> </script>
+<script src="/js/Augmented-Reality-with-JavaScript/jsFrames.min.js"> </script>
+<script src="/js/Augmented-Reality-with-JavaScript/main.js"> </script>

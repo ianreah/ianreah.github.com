@@ -1,29 +1,131 @@
 ---
-layout: default
-title: home
----
-{% for post in paginator.posts %}
-	{% if post.draft != true %}
-		<h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-		{% assign postToDisplay = post %}
-		{% assign contentToDisplay = post.content %}
-		{% include post-content %}
-	{% endif %}
-{% endfor %}
+layout: main
+title: Home
+js: js/index.js
 
-<p class="pagination">
-  <span class="previous">
-    {% if paginator.previous_page %}
-      {% if paginator.previous_page == 1 %}
-      <a href="/">&laquo; Newer posts</a>
-      {% else %}
-      <a href="/page{{ paginator.previous_page }}/">&laquo; Newer posts</a>
-      {% endif %}
-    {% endif %}
-  </span>
-  <span class="next">
-    {% if paginator.next_page %}
-    <a href="/page{{ paginator.next_page }}/">Older posts &raquo;</a>
-    {% endif %}
-  </span>
-</p>
+# project descriptions...
+ar-molecule: &ar-molecule-desc >
+    <p>An augmented reality mobile app with 3D molecule structures.
+      It's implemented for Android devices using the
+      <a href="http://www.wikitude.com/">Wikitude</a> SDK. Most of
+      the code should equally be as applicable to an iOS app through
+      the magic of <a href="http://phonegap.com/">PhoneGap</a>.</p>
+
+molecules3d: &molecules3d-desc >
+    <p>3D molecule structure visualisation with <a href="http://threejs.org/">three.js</a>.
+      This is a work in progress. I hope to eventually be able to search for a
+      compound and have it determine and render its 3D representation. For now
+      you can enjoy a spinning 3D caffeine molecule!</p>
+
+webaudioviz: &webaudioviz-desc >
+    <p>Some experimental music visualisers created in the browser by making use
+      of the <a href="http://www.w3.org/TR/webaudio/">Web Audio API</a> and its
+      real-time analysis capabilities. You can see a couple of examples of the
+      visualisers <a href="http://ianreah.com/audio-visualizer-experiments/">on
+      this page</a>, (I may come back and add some more), or
+      <a href="http://ianreah.com/2013/02/28/Real-time-analysis-of-streaming-audio-data-with-Web-Audio-API.html">
+      read the blog post</a> to find out more about how they work.</p>
+
+jsframes: &jsframes-desc >
+    <p>A JavaScript library for creating frame-based animations. There is also
+      experimental support for particles with some very basic physics. <a href="http://ianreah.com/jsFrames/">Visit the
+      project page</a> to find out how to use it and see some example usages.
+    </p>
+
+mockstock: &mockstock-desc >
+    <p><a href="/2012/11/29/MockStock-and-Two-Smoking-Libraries.html">An investigation</a>
+      into how <a href="http://signalr.net/">SignalR</a> and
+      <a href="http://msdn.microsoft.com/en-us/data/gg577609.aspx">Rx</a> could be used
+      together to make a (semi-)realistic stock price subscription service. Rx
+      generates the real-time sequences of price updates. SignalR transmits the data
+      to clients.</p>
+
+coverflow: &coverflow-desc >
+    <p>Two simple coverflow controls - one developed in Silverlight and one in JavaScript.
+      You can see each version in action <a href="http://ianreah.com/CoverFlow/">here</a>.
+      I wrote a <a href="http://www.codeproject.com/Articles/479137/A-Tale-of-Two-CoverFlows">CodeProject article</a>
+      which gives a high level overview with a bit of a comparison between the development
+      experience working with the two technologies.</p>
+
+spotibrowse: &spotibrowse-desc >
+    <p>A coverflow(-ish) Spotify App for browsing through the albums in your Spotify library. Implemented
+      with the Model-View-View Model (MVVM) pattern using <a href="http://knockoutjs.com/">knockoutjs</a>.
+      <a href="http://ianreah.com/Spotify-LibBrowser/">Visit the project page</a> for instructions on how
+      to load it into Spotify.</p>
+
+closuretape: &closuretape-desc >
+    <p>A simple animated stock ticker using Google Closure. You can see it in action <a href="http://ianreah.com/ClosureTickerTape/">here</a>,
+      or read the <a href="http://www.codeproject.com/Articles/265364/First-Adventures-in-Google-Closure">CodeProject article</a>
+      for a step-by-step tutorial on its implementation.</p>
+
+top3-projects:
+  - name: AR-Molecule
+    url: /2013/08/11/Augmented-Reality-with-JavaScript-Part-2.html
+    img-url: img/project_ar_molecule.jpg
+    call-to-action: Find out more
+    description: *ar-molecule-desc
+  - name: Molecules3D
+    url: http://molecules3d.apphb.com/
+    img-url: img/project_molecules3d.png
+    call-to-action: See it in action
+    description: *molecules3d-desc
+  - name: WebAudioViz
+    url: /audio-visualizer-experiments/
+    img-url: img/project_audio_visualizer_experiments.png
+    call-to-action: Find out more
+    description: *webaudioviz-desc
+
+next3-projects:
+  - name: jsFrames
+    url: /jsFrames/
+    img-url: img/project_jsframes.png
+    call-to-action: Find out more
+    description: *jsframes-desc
+  - name: MockStock
+    url: http://mockstock.apphb.com/
+    img-url: img/project_mockstock.png
+    call-to-action: See it in action
+    description: *mockstock-desc
+  - name: CoverFlow
+    url: /CoverFlow/
+    img-url: img/project_coverflow.png
+    call-to-action: Find out more
+    description: *coverflow-desc
+
+theRest:
+  - name: SpotiBrowse
+    url: /Spotify-LibBrowser/
+    img-url: img/project_spotibrowse.png
+    call-to-action: Find out more
+    description: *spotibrowse-desc 
+  - name: ClosureTape
+    url: /ClosureTickerTape/
+    img-url: img/project_closuretape.png
+    call-to-action: See it in action
+    description: *closuretape-desc
+---
+
+{% comment %} top3 projects always shown {% endcomment %}
+{% assign projects = page.top3-projects %}
+{% include project-rows %}
+
+{% comment %} next3 projects are on the second row in desktop {% endcomment %}
+{% comment %} but within the collapsed section on mobile      {% endcomment %}
+{% assign projects = page.next3-projects %}
+{% assign visibility = 'hidden-phone' %}
+{% include project-rows %}
+
+{% comment %} collapse the rest of the projects {% endcomment %}
+<div id="moreProjects" class="collapse">
+  {% assign projects = page.next3-projects %}
+  {% assign visibility = 'visible-phone' %}
+  {% include project-rows %}
+
+  {% assign projects = page.theRest %}
+  {% assign visibility = nil %}
+  {% include project-rows %}
+</div>
+
+<a href="javascript:void(0)" id="toggleLink" data-toggle="collapse" data-target="#moreProjects">
+  See more projects &raquo;
+</a>

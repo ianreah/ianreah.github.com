@@ -1,8 +1,8 @@
-auto: true
 pygments: true
 title: ianreah.com
 description: 
-paginate: 5
+paginate: 3
+paginate_path: "blog/page:num"
 navigable-pages:
   - title: home
     url: /index.html
