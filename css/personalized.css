@@ -1,5 +1,20 @@
 @import url(pygment_trac.css);
 
+html, body {
+	height: 100%;
+}
+
+.wrapper {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -81px;
+}
+
+#footer, .push {
+	height: 60px;
+}
+
 body {
 	text-align: justify;
 }
@@ -31,7 +46,6 @@ body {
 #footer {
 	margin-top: 20px;
 	position: static;
-	height: 60px;
 	line-height: 60px;
 }
 
@@ -138,6 +152,13 @@ blockquote p {
 
 	#header-background {
 		height: 150px;
+	}
+}
+
+/* Landscape tablets and down */
+@media (max-width: 979px) {
+	.wrapper {
+		margin: 0 auto -91px;
 	}
 }
 
