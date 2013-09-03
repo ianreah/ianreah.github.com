@@ -206,3 +206,49 @@ blockquote p {
 #social #rss {
 	background-position: -0px -68px;
 }
+
+#downloads {
+  padding-left: 30px;
+  background: url('../img/icon_download.png') no-repeat 0% 60%;
+}
+
+.zip_download_link {
+  display: block;
+  float: left;
+  width: 90px;
+  height:70px;
+  text-indent: -5000px;
+  overflow: hidden;
+  background: url(../img/sprite_download.png) no-repeat bottom left;
+}
+
+.tar_download_link {
+  display: block;
+  float: left;
+  width: 90px;
+  height:70px;
+  text-indent: -5000px;
+  overflow: hidden;
+  background: url(../img/sprite_download.png) no-repeat bottom right;
+}
+
+.zip_download_link:hover {
+  background: url(../img/sprite_download.png) no-repeat top left;
+}
+
+.tar_download_link:hover {
+  background: url(../img/sprite_download.png) no-repeat top right;
+}
+
+#forkme_banner {
+  margin: 6px;
+  padding: 10px 50px 10px 10px;
+  background: url('../img/blacktocat.png') #0090ff no-repeat 95% 50%;
+  font-weight: 700;
+  box-shadow: 0 0 10px rgba(0,0,0,.5);
+  max-width: 108px;
+}
+
+#forkme_banner:hover {
+  text-decoration: none;
+}
