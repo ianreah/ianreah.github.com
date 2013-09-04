@@ -127,6 +127,10 @@ blockquote p {
   color: inherit;
 }
 
+#main-content {
+  margin-bottom: 20px;
+}
+
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) { 
 	#page-title {
