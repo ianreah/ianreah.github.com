@@ -16,7 +16,7 @@ In the rest of this post, I'll go through how I created [AR Molecule](https://gi
 
 Here's just a short (poor quality) video to give some idea of what it looks like...
 
-<div style="text-align: center"><iframe width="560" height="315" src="http://www.youtube.com/embed/T06B_uyfRp0" frameborder="0"> </iframe></div>
+<div class="video-wrapper"><iframe width="560" height="315" src="http://www.youtube.com/embed/T06B_uyfRp0" frameborder="0"> </iframe></div>
 
 I haven't tested it, but all of the code here should be equally as applicable to an iOS app using the iOS version of the SDK.
 
