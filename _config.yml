@@ -1,12 +1,3 @@
 pygments: true
-title: ianreah.com
-description: 
 paginate: 3
 paginate_path: "blog/page:num"
-navigable-pages:
-  - title: home
-    url: /index.html
-  - title: projects
-    url: /projects.html
-  - title: about
-    url: /about.html
