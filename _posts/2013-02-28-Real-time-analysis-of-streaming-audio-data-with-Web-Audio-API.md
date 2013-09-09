@@ -44,7 +44,7 @@ If you've got a [supported browser](http://caniuse.com/#feat=audio-api) you shou
 }
 
 #example audio {
-    width: 355px;
+    width: 100%;
 }
 
 #example .showIfNoApi {
@@ -59,7 +59,7 @@ If you've got a [supported browser](http://caniuse.com/#feat=audio-api) you shou
 }
 
 #example #visualisation > div {
-    width: 10px;
+    width: 2.5%;
     background-color: darkorange;
     display: inline-block;
     position: absolute;

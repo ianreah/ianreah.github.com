@@ -46,8 +46,9 @@ $(function () {
 
     // Set up the visualisation elements
     var visualisation = $("#visualisation");
+	var barSpacingPercent = 100 / analyser.frequencyBinCount;
     for (var i = 0; i < analyser.frequencyBinCount; i++) {
-        $("<div/>").css("left", i * 15 + "px")
+    	$("<div/>").css("left", i * barSpacingPercent + "%")
 			.appendTo(visualisation);
     }
     var bars = $("#visualisation > div");
