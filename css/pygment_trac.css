@@ -71,5 +71,6 @@
 
 .bash { background-color: black; color: silver;  line-height: 13px; }
 .bash .usr { color: green; }
-.bash .pth {	color: olive; }
-.bash .cmd {	color: white; }
+.bash .pth { color: olive; }
+.bash .cmd { color: white; }
+.bash .err { color: maroon; background-color: black; }
