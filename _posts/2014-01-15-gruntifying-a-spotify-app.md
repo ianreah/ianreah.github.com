@@ -1,7 +1,7 @@
 ---
 title: "Gruntifying a Spotify App"
 layout: post
-date: 2014-01-15 12:13:00
+date: 2014-01-15 12:14:00
 ---
 
 <p>
