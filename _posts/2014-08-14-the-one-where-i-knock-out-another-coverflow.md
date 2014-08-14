@@ -21,7 +21,7 @@ I've made a few CoverFlow controls already - I'm worried it's becoming an obsess
 The first was my Spotify App, [Spotify-LibBrowser](http://ianreah.com/Spotify-LibBrowser/). The Spotify App environment doesn't
 support CSS3 3D transforms so I wasn't able to give it the familiar [three-dimensional CoverFlow formation](http://en.wikipedia.org/wiki/Cover_Flow).
 
-I wanted to to see how it could be done with CSS3 3D transforms so next I made [this control](http://ianreah.com/CoverFlow/). And then, just for fun,
+I wanted to see how it could be done with CSS3 3D transforms so next I made [this control](http://ianreah.com/CoverFlow/). And then, just for fun,
 I implemented [the same thing in Silverlight](http://ianreah.com/CoverFlow/silverlight.html)! (I even wrote a
 [CodeProject article](http://www.codeproject.com/Articles/479137/A-Tale-of-Two-CoverFlows) about those last two.)
 
