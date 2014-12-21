@@ -1,9 +1,9 @@
 [submodule "_includes"]
 	path = _includes
-	url = git://github.com/ianreah/website-includes.git
+	url = https://github.com/ianreah/website-includes.git
 [submodule "_layouts"]
 	path = _layouts
-	url = git://github.com/ianreah/website-layouts.git
+	url = https://github.com/ianreah/website-layouts.git
 [submodule "_boilerplate"]
 	path = _boilerplate
 	url = https://github.com/ianreah/jekyll-rake-boilerplate.git
