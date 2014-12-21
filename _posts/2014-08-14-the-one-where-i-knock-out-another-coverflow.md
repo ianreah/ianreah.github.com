@@ -14,7 +14,7 @@ date: 2014-08-14 13:24:00
 > This post describes the approach I'm taking.
 >
 > I'm implementing it using the MVVM pattern with the help of KnockoutJS, so I'm going to come back and write up some of that
-> later in another post.
+> later in [another post](http://ianreah.com/2014/12/21/a-coverflow-control-implemented-with-knockoutjs.html).
 
 I've made a few CoverFlow controls already - I'm worried it's becoming an obsession!
 
@@ -80,4 +80,4 @@ You can have a [play with it in action](http://ianreah.com/infinite-coverflow/).
 
 Just like [my first Spotify App](http://ianreah.com/Spotify-LibBrowser/), I chose to follow the [Model-View-View Model (MVVM)](http://en.wikipedia.org/wiki/Model_View_ViewModel)
 pattern with the help of [KnockoutJS](http://knockoutjs.com/index.html) - hence the ridiculous pun in the title. (Sorry!). I'm
-going to focus on that aspect of the implementation in another post.
+going to focus on that aspect of the implementation in [another post](http://ianreah.com/2014/12/21/a-coverflow-control-implemented-with-knockoutjs.html).
